@@ -20,6 +20,8 @@ public class WxRecommendToday implements java.io.Serializable{
 	private String wxAccountNo;
 	/*微信文章标题*/
 	private String title;
+	/*微信文章概要*/
+	private String str_abstract;
 	/*微信文章内容*/
 	private String content;
 	/*微信文章发布时间*/
@@ -28,6 +30,10 @@ public class WxRecommendToday implements java.io.Serializable{
 	private Date captureTime;
 	/*微信文章源链接*/
 	private String sourceUrl;
+	/*阅读数*/
+	private int readNum;
+	/*点赞数*/
+	private int goodNum;
 	/*缩略图的存储地址*/
 	private String picUrl;
 	
@@ -86,14 +92,6 @@ public class WxRecommendToday implements java.io.Serializable{
 	public void setSourceUrl(String sourceUrl) {
 		this.sourceUrl = sourceUrl;
 	}
-	
-	@Override
-	public String toString() {
-		return "WxRecommendToday [id=" + id + ", wxAccountNo=" + wxAccountNo
-				+ ", title=" + title + ", content=" + content
-				+ ", publishTime=" + publishTime + ", captureTime="
-				+ captureTime + ", sourceUrl=" + sourceUrl + "]";
-	}
 
 	public String getPicUrl() {
 		return picUrl;
@@ -101,6 +99,40 @@ public class WxRecommendToday implements java.io.Serializable{
 
 	public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
+	}
+
+	public int getReadNum() {
+		return readNum;
+	}
+
+	public void setReadNum(int readNum) {
+		this.readNum = readNum;
+	}
+
+	public int getGoodNum() {
+		return goodNum;
+	}
+
+	public void setGoodNum(int goodNum) {
+		this.goodNum = goodNum;
+	}
+
+	public String getStr_abstract() {
+		return str_abstract;
+	}
+
+	public void setStr_abstract(String str_abstract) {
+		this.str_abstract = str_abstract;
+	}
+
+	@Override
+	public String toString() {
+		return "WxRecommendToday [id=" + id + ", wxAccountNo=" + wxAccountNo
+				+ ", title=" + title + ", str_abstract=" + str_abstract
+				+ ", content=" + content + ", publishTime=" + publishTime
+				+ ", captureTime=" + captureTime + ", sourceUrl=" + sourceUrl
+				+ ", readNum=" + readNum + ", goodNum=" + goodNum + ", picUrl="
+				+ picUrl + "]";
 	}
 
 }
