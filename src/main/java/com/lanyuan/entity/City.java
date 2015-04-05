@@ -8,17 +8,19 @@ package com.lanyuan.entity;
 public class City {
 	
 	/*城市ID*/
-	private int cityId;
+	private int id;
 	
 	/*城市名称*/
 	private String cityName;
 
-	public int getCityId() {
-		return cityId;
+   
+
+	public int getId() {
+		return id;
 	}
 
-	public void setCityId(int cityId) {
-		this.cityId = cityId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getCityName() {
@@ -31,7 +33,7 @@ public class City {
 
 	@Override
 	public String toString() {
-		return "City [cityId=" + cityId + ", cityName=" + cityName + "]";
+		return "City [id=" + id + ", cityName=" + cityName + "]";
 	}
 	
 }
