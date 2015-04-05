@@ -69,6 +69,8 @@ public class WxRecommendToday implements java.io.Serializable{
 		this.content = content;
 	}
 	
+	/*时间格式化*/
+	@JsonSerialize(using=JsonDateSerializer.class)
 	public Date getPublishTime() {
 		return publishTime;
 	}
@@ -77,6 +79,8 @@ public class WxRecommendToday implements java.io.Serializable{
 		this.publishTime = publishTime;
 	}
 	
+	/*时间格式化*/
+	@JsonSerialize(using=JsonDateSerializer.class)
 	public Date getCaptureTime() {
 		return captureTime;
 	}
