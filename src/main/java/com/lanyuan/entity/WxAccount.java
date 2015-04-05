@@ -36,6 +36,10 @@ public class WxAccount implements java.io.Serializable{
 	
 	/*录入时间*/
 	private Date createTime;
+	
+	/*城市ID*/
+	private int cityId;
+	
 	@ExcelDataMapper(title="id",order=1)
 	public int getId() {
 		return id;
@@ -101,11 +105,21 @@ public class WxAccount implements java.io.Serializable{
 		this.createTime = createTime;
 	}
 
+	public int getCityId() {
+		return cityId;
+	}
+
+	public void setCityId(int cityId) {
+		this.cityId = cityId;
+	}
+
 	@Override
 	public String toString() {
 		return "WxAccount [id=" + id + ", wxAccountName=" + wxAccountName
 				+ ", wxAccountNo=" + wxAccountNo + ", wxType=" + wxType
 				+ ", description=" + description + ", state=" + state
-				+ ", createTime=" + createTime + "]";
+				+ ", createTime=" + createTime + ", cityId=" + cityId + "]";
 	}
+
+
 }
