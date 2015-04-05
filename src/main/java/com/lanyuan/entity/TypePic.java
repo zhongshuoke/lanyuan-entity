@@ -16,6 +16,9 @@ public class TypePic {
 	//微信文章id
 	private Long wxArticleId;
 	
+    //微信文章标题
+	private String wxArticTitle;
+	
     //类别图片的服务器地址
 	private String typePicUrl;
 	
@@ -49,6 +52,14 @@ public class TypePic {
 
 	public void setWxAccTypeId(Long wxAccTypeId) {
 		this.wxAccTypeId = wxAccTypeId;
+	}
+
+	public String getWxArticTitle() {
+		return wxArticTitle;
+	}
+
+	public void setWxArticTitle(String wxArticTitle) {
+		this.wxArticTitle = wxArticTitle;
 	}
 	
 }
