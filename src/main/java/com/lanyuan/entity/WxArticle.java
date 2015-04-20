@@ -27,9 +27,9 @@ public class WxArticle implements java.io.Serializable{
 	/*微信文章源链接*/
 	private String sourceUrl;
 	/*微信阅读数*/
-	private int readNum;
+	private Integer readNum;
 	/*微信点赞数*/
-	private int goodNum;
+	private Integer goodNum;
 	/*文章对应缩略图所在服务器地址*/
 	private String picUrl;
 
@@ -93,21 +93,27 @@ public class WxArticle implements java.io.Serializable{
 		this.sourceUrl = sourceUrl;
 	}
 
-	public int getReadNum() {
-		//return readNum;
-		return 0;
+	public Integer getReadNum() {
+		if(readNum==null) {
+			return 0;
+		}else {
+			return readNum;
+		}
 	}
 
-	public void setReadNum(int readNum) {
+	public void setReadNum(Integer readNum) {
 		this.readNum = readNum;
 	}
 
-	public int getGoodNum() {
-		//return goodNum;
-		return 0;
+	public Integer getGoodNum() {
+		if(goodNum==null) {
+			return 0;
+		}else {
+			return goodNum;
+		}
 	}
 
-	public void setGoodNum(int goodNum) {
+	public void setGoodNum(Integer goodNum) {
 		this.goodNum = goodNum;
 	}
 
