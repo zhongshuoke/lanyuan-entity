@@ -19,6 +19,9 @@ public class Advertisement {
     //广告地址
 	private String url;
 	
+    //广告图片路径
+	private String picurl;
+	
 	/*创建时间*/
     private Date createTime;
 
@@ -52,6 +55,14 @@ public class Advertisement {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public String getPicurl() {
+		return picurl;
+	}
+
+	public void setPicurl(String picurl) {
+		this.picurl = picurl;
 	}
 	
 }

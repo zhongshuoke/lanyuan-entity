@@ -25,6 +25,9 @@ public class WxAccType implements java.io.Serializable{
 	
 	/*创建时间*/
     private Date createTime;
+    
+	/*类别图片的存储地址*/
+	private String typePicUrl;
 
     @ExcelDataMapper(title="id",order=1)
 	public int getId() {
@@ -61,5 +64,14 @@ public class WxAccType implements java.io.Serializable{
 
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
+	}
+
+	@ExcelDataMapper(title="微信公众号类别图片",order=5)
+	public String getTypePicUrl() {
+		return typePicUrl;
+	}
+
+	public void setTypePicUrl(String typePicUrl) {
+		this.typePicUrl = typePicUrl;
 	}
 }
