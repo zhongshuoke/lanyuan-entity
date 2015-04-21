@@ -40,6 +40,9 @@ public class WxAccount implements java.io.Serializable{
 	/*城市ID*/
 	private int cityId;
 	
+	/*城市名称 只为映射用*/
+	private String cityName;
+	
 	@ExcelDataMapper(title="id",order=1)
 	public int getId() {
 		return id;
@@ -120,6 +123,15 @@ public class WxAccount implements java.io.Serializable{
 				+ ", description=" + description + ", state=" + state
 				+ ", createTime=" + createTime + ", cityId=" + cityId + "]";
 	}
+
+	public String getCityName() {
+		return cityName;
+	}
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
 
 
 }
