@@ -5,6 +5,10 @@ package com.lanyuan.entity;
 
 import java.util.Date;
 
+import org.codehaus.jackson.map.annotate.JsonSerialize;
+
+import com.lanyuan.util.JsonDateSerializer;
+
 /**
  * 广告
  * @author heyuxing
@@ -41,6 +45,8 @@ public class Advertisement {
 		this.url = url;
 	}
 
+	/*时间格式化*/
+	@JsonSerialize(using=JsonDateSerializer.class)
 	public Date getCreateTime() {
 		return createTime;
 	}

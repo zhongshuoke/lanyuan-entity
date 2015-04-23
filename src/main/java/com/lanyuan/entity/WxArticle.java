@@ -32,6 +32,9 @@ public class WxArticle implements java.io.Serializable{
 	private Integer goodNum;
 	/*文章对应缩略图所在服务器地址*/
 	private String picUrl;
+	/*文章是否已被推荐   1为已推荐，0为未推荐*/
+	private int isRecomm;
+	private String isRecommDesc;
 
 	public int getId() {
 		return id;
@@ -133,6 +136,29 @@ public class WxArticle implements java.io.Serializable{
 				+ captureTime + ", sourceUrl=" + sourceUrl + ", readNum="
 				+ readNum + ", goodNum=" + goodNum + ", picUrl=" + picUrl + "]";
 	}
+
+	
+
+	public String getIsRecommDesc() {
+		if(this.isRecomm == 0){
+			return "未推荐";
+		}else{
+			return "已推荐";
+		}
+	}
+
+	public void setIsRecommDesc(String isRecommDesc) {
+		this.isRecommDesc = isRecommDesc;
+	}
+
+	public int getIsRecomm() {
+		return isRecomm;
+	}
+
+	public void setIsRecomm(int isRecomm) {
+		this.isRecomm = isRecomm;
+	}
+
 	
 	
 }
