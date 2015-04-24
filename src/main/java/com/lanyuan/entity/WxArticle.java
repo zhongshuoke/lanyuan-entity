@@ -143,7 +143,7 @@ public class WxArticle implements java.io.Serializable{
 		if(this.isRecomm == 0){
 			return "未推荐";
 		}else{
-			return "已推荐";
+			return "<span style='color:red'>已推荐</span>";
 		}
 	}
 
