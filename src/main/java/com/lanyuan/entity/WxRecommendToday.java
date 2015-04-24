@@ -3,6 +3,7 @@ package com.lanyuan.entity;
 
 import java.util.Date;
 
+import org.apache.commons.lang.StringUtils;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 import com.lanyuan.util.ExcelDataMapper;
@@ -98,7 +99,7 @@ public class WxRecommendToday implements java.io.Serializable{
 	}
 
 	public String getPicUrl() {
-		return picUrl;
+        return this.picUrl;
 	}
 
 	public void setPicUrl(String picUrl) {

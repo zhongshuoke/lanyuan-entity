@@ -121,7 +121,7 @@ public class WxArticle implements java.io.Serializable{
 	}
 
 	public String getPicUrl() {
-		return picUrl;
+		return this.picUrl;
 	}
 
 	public void setPicUrl(String picUrl) {
